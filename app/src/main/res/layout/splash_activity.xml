@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_14">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_header"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/header_splash"
+        android:scaleType="fitStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/footer_splash"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome \n To"
+        android:textColor="#5f52f0"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="40sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_learning_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Learning"
+        android:textColor="#5f52f0"
+        android:gravity="center"
+        android:textSize="42sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome"
+        android:fontFamily="@font/poppins_semibold"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:hint="Let's Go"
+        android:paddingStart="30dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_learning_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/bg_rounded_white"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="100dp"
+        android:drawableEnd="@drawable/ic_rounded_splash"
+        android:paddingEnd="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
